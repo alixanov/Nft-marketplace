@@ -1072,8 +1072,6 @@ border-radius: 50px;
 }
 
 
-
-
 .container-r {
   width: 100%;
   display: flex;
@@ -1144,9 +1142,111 @@ border-radius: 50px;
 
 .button-r button>img {
   width: 24px;
-  /* Adjust the size of the icon */
   height: auto;
 }
+
+/* ======================== */
+/* Медиа-запросы для адаптации */
+/* ======================== */
+
+/* Для планшетов (до 768px) */
+@media (max-width: 768px) {
+  .wrapper-r {
+    height: 180px;
+    /* Уменьшена высота обёртки */
+    border-radius: 40px;
+    /* Уменьшена радиус скругления */
+    padding: 20px;
+    /* Добавлен внутренний отступ */
+  }
+
+  .wrapper-r>h1 {
+    font-size: 22px;
+    /* Уменьшен размер заголовка */
+    letter-spacing: 0.8px;
+    /* Уменьшен интервал между буквами */
+    margin-bottom: 15px;
+    /* Уменьшен отступ снизу */
+  }
+
+  .button-r {
+    gap: 8px;
+    /* Уменьшен зазор между кнопками */
+  }
+
+  .button-r>button {
+    font-size: 16px;
+    /* Уменьшен размер шрифта кнопок */
+    padding: 6px 12px;
+        /* Уменьшены внутренние отступы кнопок */
+  }
+
+  .button-r button>img {
+    width: 20px;
+    /* Уменьшен размер иконок в кнопках */
+  }
+}
+
+/* Для мобильных телефонов (до 480px) */
+@media (max-width: 480px) {
+  .container-r {
+    padding: 4%;
+    /* Увеличен общий отступ */
+  }
+
+  .wrapper-r {
+    height: 150px;
+    /* Ещё меньше высота */
+    border-radius: 30px;
+    /* Ещё меньше радиус скругления */
+  }
+
+  .wrapper-r>h1 {
+    font-size: 18px;
+    /* Уменьшен размер шрифта заголовка */
+    letter-spacing: 0.5px;
+    /* Ещё меньше интервал между буквами */
+    margin-bottom: 10px;
+    /* Уменьшен отступ снизу */
+  }
+
+  .button-r {
+    gap: 6px;
+    /* Ещё меньше зазор между кнопками */
+  }
+
+  .button-r>button {
+    font-size: 14px;
+    /* Ещё меньше размер шрифта кнопок */
+    padding: 4px 10px;
+    /* Ещё меньше внутренние отступы */
+    border-radius: 20px;
+    /* Уменьшен радиус кнопок */
+  }
+
+  .button-r button>img {
+    width: 18px;
+    /* Уменьшен размер иконок в кнопках */
+  }
+}
+/* Для мобильных телефонов (до 480px) */
+@media (max-width: 435px) {
+    .wrapper-r>h1 {
+        font-size: 15px;
+        /* Уменьшен размер шрифта заголовка */
+        letter-spacing: 0.5px;
+        /* Ещё меньше интервал между буквами */
+        margin-bottom: 10px;
+        /* Уменьшен отступ снизу */
+      }
+  .button-r>button {
+ 
+      padding: 4px 8px;
+
+    }}
+    .button-r > button > p {
+            font-size: 14px;
+    }
 footer {
   width: 100%;
   display: flex;
